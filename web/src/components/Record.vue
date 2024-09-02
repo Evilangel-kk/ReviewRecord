@@ -25,7 +25,7 @@ export default {
     name:"Record",
     data(){
         return{
-            sentences:["八点之前起床","背单词","复习数学","复习英语","练习编程","背面经","复习数据结构","复习计算机组成原理","复习操作系统","锻炼身体"],
+            sentences:["八点之前起床","背单词","复习数学","复习英语","练习编程","复习计算机网络","复习数据结构","复习计算机组成原理","复习操作系统","锻炼身体"],
             types:["IsGetup","IsWord","IsMath","IsEnglish","IsCode","IsMianjing","IsDS","IsCCP","IsOS","IsSport"],
             isFinish:{isGetup:false,isWord:false,isMath:false,isEnglish:false,isCode:false,isMianjing:false,isDS:false,isCCP:false,isOS:false,isSport:false},
             date:"",

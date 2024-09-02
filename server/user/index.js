@@ -147,17 +147,16 @@ router.get("/Descriptions", (req, res) => {
     })
 })
 
-for (let i = new Date("2024-01-01"); i <= new Date("2024-12-31"); i.setDate(i.getDate() + 1)) {
-    console.log(i.getFullYear() + "-" + (i.getMonth() + 1) + "-" + i.getDate());
-    let time = i.getFullYear() + "-" + (i.getMonth() + 1) + "-" + i.getDate()
-    db.query("insert into `record`.`check`(`Date`,`Schedule`,`IsMath`,`IsWord`,`IsEnglish`,`IsGetup`,`IsSport`,`IsCode`,`IsMianjing`,`IsDS`,`IsOS`,`IsCCP`,`Record`) values(?,0,0,0,0,0,0,0,0,0,0,0,'这天没有发生什么...')", time, (err, result) => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log("wancheng");
-        }
-    })
-}
-
+// for (let i = new Date("2024-01-01"); i <= new Date("2024-12-31"); i.setDate(i.getDate() + 1)) {
+//     console.log(i.getFullYear() + "-" + (i.getMonth() + 1) + "-" + i.getDate());
+//     let time = i.getFullYear() + "-" + (i.getMonth() + 1) + "-" + i.getDate()
+//     db.query("insert into `record`.`check`(`Date`,`Schedule`,`IsMath`,`IsWord`,`IsEnglish`,`IsGetup`,`IsSport`,`IsCode`,`IsMianjing`,`IsDS`,`IsOS`,`IsCCP`,`Record`) values(?,0,0,0,0,0,0,0,0,0,0,0,'这天没有发生什么...')", time, (err, result) => {
+//         if (err) {
+//             console.log(err);
+//         } else {
+//             console.log("wancheng");
+//         }
+//     })
+// }
 
 module.exports = router;
